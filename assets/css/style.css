@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background: #121212;
+    background: linear-gradient( 135deg,#121212 25%,#1a1a1a 25%,#1a1a1a 50%,#121212 50%, #121212 75%, #1a1a1a 75%,#1a1a1a);
+    background-size: 40px 40px;
+  
+    animation: move 4s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 40px 40px;
+    }
+  }
+  
+  @keyframes move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 40px 40px;
+    }
+  }
+
+  .watch {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    width: 550px;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 30px 0 #fff;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  
+  .watch div {
+    height: 180px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #282828;
+    background: rgba(255, 255, 255, 0.61);
+    box-shadow: 0 8px 32px 0 black;
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: transform 0.3s ease;
+    cursor: default;
+    animation: expand 0.7s ease forwards;
+  }
+
+  @keyframes expand {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+ 
+  .watch span {
+    font-weight: bold;
+    font-size: 70px;
+  }
+  
+  .watch span.tempo {
+    font-size: 15px;
+  }
+  
+  
+  @media (max-width: 600px) {
+    body {
+      background-image: url('./assets/chihiro-media.jpg');
+    }
+    .watch {
+      height: 200px;
+      width: 370px;
+    }
+    .watch div {
+      height: 140px;
+      width: 100px;
+    }
+    .watch span {
+      font-size: 50px;
+    }
+    
+    .watch span.time {
+      font-size: 10px;
+    }
+  }
+
+
+  
+
+
+
+
+
+  
